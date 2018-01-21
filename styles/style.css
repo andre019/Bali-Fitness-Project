@@ -5,19 +5,18 @@ padding: 0;
 box-sizing: border-box;
 }
 
-html, body {
+body {
 font-family: "Roboto", Arial, sans-serif;
 }
 
 /*NAVIGATION*/
-#container {
+#wrapper {
 display: flex;
 flex-direction: column;
 width: 100vw;
-
 }
 
-#container > * {
+#wrapper > * {
 padding: 10px;
 flex: 1 100%;
 }
@@ -28,6 +27,7 @@ background: rgba(69,69, 182, 0.55);
 display: flex;
 justify-content: space-around;
 }
+
 
 .logo {
 font-size: 2em;
@@ -56,7 +56,7 @@ color: white;
 
 /*SECTION MAIN*/
 
-article {
+article.item1 {
 background-image: url(../img/bali-hero2.jpg);
 height: 80vh;
 background-repeat: no-repeat;
@@ -106,8 +106,8 @@ letter-spacing: 3px;
 
 .item2 {
 text-align: center;
-background: rgba(0, 0, 0, 0.12) !important;
-height: 800px;
+background: rgba(0, 0, 0, 0.12);
+
 }
 
 .item2 h1 {
@@ -135,6 +135,7 @@ height: 300px;
 background: white;
 color: grey;
 margin: 25px;
+margin-bottom: 200px;
 }
 
 .box img {
@@ -198,89 +199,121 @@ margin-bottom: 40px;
 }
 
 
-                                        /*PORTRAIT ITEM4*/
-
-.wrapper-portrait {
-overflow: hidden;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+/*PORTRAIT ITEM4*/
 
 
-}
-
-.clickable-container {
-position:relative;
-color:white;
-flex-direction: column;
-box-align: center;
-align-items: center;
-flex-basis: 33%;
+.trainers-section {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
 
 }
 
-
-.single-news {
-padding: 10px;
-text-align: center;
-
-}
-.single-news >img {
-  height: 600px;
-  width: 450px;
-}
-
-.clickable-container:hover {
-cursor:pointer;
-color: white;
-}
-
-.overlay{
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-background-color: rgba(0, 0, 0, 0.8);
-overflow: hidden;
-width: 100%;
-height: 0;
-transition: 0.5s ease;
-}
-
-.clickable-container:hover .overlay {
-height: 100%;
-display: inline-block;
-
+.trainers-section .container h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 900;
+    margin-bottom: 30px;
 
 }
-.overlay-content {
-  margin-top: 100px;
-}
-.overlay-content > h2 {
-font-size: 1.8em;
-line-height: 2.2em;
 
-}
-.overlay-content > h3 {
-line-height: 1.8em;
-
-}
-.portrait-info>p {
-font-size: 1.4em;
-color: #848484;
-line-height: 1.8em;
+.trainers-section .container p {
+    margin-bottom: 1.5em;
+    font-size: 20px;
+    color: #848484;
 }
 
-.overlay-content .social-media {
-font-size: 1.5em;
-line-height: 4em;
+.trainers-ctn {
+    position: relative;
+    background-size: cover;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.overlay-content .social-media i {
-padding: 13px;
-margin-right: 5px;
-color: black;
-display: inline-block;
-background: white;
+
+.trainers-ctn  .trainer {
+    width: 30%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.trainers-ctn .trainer1,
+.trainers-ctn .trainer2,
+.trainers-ctn .trainer3,
+.trainers-ctn .trainer4,
+.trainers-ctn .trainer5,
+.trainers-ctn .trainer6 {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+.trainers-ctn .trainer1 {
+    background-image: url(../img/trainer1.jpg);
+}
+
+.trainers-ctn .trainer2 {
+    background-image: url(../img/trainer6.jpg);
+}
+
+.trainers-ctn .trainer3 {
+    background-image: url(../img/trainer2.jpg);
+}
+
+.trainers-ctn .trainer4 {
+    background-image: url(../img/trainer5.jpg);
+}
+
+.trainers-ctn .trainer5 {
+    background-image: url(../img/trainer3.jpg);
+}
+
+.trainers-ctn .trainer6 {
+    background-image: url(../img/trainer4.jpg);
+}
+
+.trainer .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s ease;
+    padding-top: 800px;
+    transition: all 0.5s ease;
+
+}
+
+.trainer .overlay:hover{
+
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 100px;
+}
+
+.overlay .trainer-details {
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.overlay .trainer-details h3  {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+
+.overlay .trainer-details i {
+    padding: 10px;
+    margin-right: 5px;
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
 }
 
 
@@ -299,10 +332,10 @@ text-align: left;
 color: #fff;
 }
 
-.banner-item5 {
+.item5 .banner-item5 {
 position: absolute;
 margin-top: -10px;
-margin-left: 5vw;
+margin-left: 5%;
 padding-right: 10%;
 background: #222831;
 height: 500px;
@@ -330,8 +363,8 @@ text-align: center;
 background: rgba(0, 0, 0, 0.1);
 padding: 10px;
 color: grey;
-width: 100vw;
-height: 1000px;
+flex-direction: row;
+
 }
 .item6 h1 {
 font-size: 2em;
@@ -344,16 +377,18 @@ font-size: 1.2em;
 .pricing-list {
 display: flex;
 justify-content:center;
-
+flex-direction:row;
 }
 
 
-/*TO TELMO TO ASK*/
 .price {
 margin: 60px;
 text-align: center;
 background: white;
 padding: 80px;
+
+
+
 }
 .price p {
 font-size: 1.2em;
@@ -377,21 +412,7 @@ font-size: 3rem;
 font-weight: 600;
 }
 
-.price>h5 {
-font-size: 1.2em;
-background: white;
-border: 2px solid rgba(0, 0, 0, 0.2);
-border-radius: 5px;
-width: 200px;
-height: 50px;
-margin-top: 30px;
-cursor: pointer;
-padding-top: 11px;
-}
 
-.price>h5 a{
-text-decoration: none;
-}
 
 .price .active {
 background: rgba(0, 200, 0, 0.7);
@@ -400,17 +421,12 @@ color: white;
 
 }
 
-.price h5:hover {
-transition: 0.4s;
-background: rgba(0, 0, 0, 0.5);
-color: rgba(0, 0, 0, 0.0);
-text-decoration: none;
-}
+
 
 /*FOOTER*/
 
 footer {
-height: 20vh;
+
 background: #222831;
 text-align: center;
 color: #6d6d6d;
@@ -426,4 +442,117 @@ margin: 30px 0 10px 0;
 
 footer p {
 line-height: 1.4em;
+}
+
+
+/*JAVASCRIPT STUFF: ;*/
+#scrollup {
+font-size: 6em;
+color: rgba(69,69, 182, 0.55);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+#navuns {
+ list-style-type: none;
+ float: left;
+}
+
+#navuns li a {
+  color: white;
+  display: block;
+}
+
+#navuns ul li a.active {
+   color: white;
+ }
+
+
+.close {
+  text-align: right;
+  position: relative;
+  color: #2c3e50
+}
+header {
+  display:block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #d0cfc5;
+  z-index: 99;
+}
+
+header{
+  display: none;
+}
+
+/*MEDIA QUERIS*/
+
+
+
+@media (max-width: 868px) {
+  .toggle {
+    display: none;
+  }
+  header{
+    color: #222831;
+    display: inline-block;
+
+  }
+  header i{
+    margin: 14px;
+  }
+
+.list {
+  display: none;
+}
+.trainers-ctn {
+flex-wrap: wrap;
+width: 100% !important;
+}
+
+
+.pricing-list  {
+flex-wrap: wrap;
+flex-direction: column;
+
+
+}
+
+
+.activities {
+  flex-wrap: wrap;
+  width: 100% !important;
+}
+.price {
+flex-direction: column;
+  width: 80%;
+  margin: 40px auto;
+  font-size: 1.8em;
+}
+
+
+
+.trainers-ctn .trainer {
+  flex-direction: column;
+    width: 60%;
+    margin: 40px auto;
+}
+.item5 .banner-item5{
+  height: 500px;
+  width: 300px;
+
+}
+.banner-item5 p {
+margin: 0px;
+}
+
+.sidenav a:nth-child(1){
+display: inline;
+
+}
+
+
 }

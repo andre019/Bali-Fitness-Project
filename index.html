@@ -9,14 +9,19 @@
   <title>Bali Fitness from André Rothweiler</title>
 </head>
 <body>
-  <!-- MAIN CONTAINER TEXT GITHUB -->
-  <div id="container"> /// Test
+  <!-- ARROW UP -->
+
+  <!-- MAIN CONTAINER -->
+  <div id="wrapper">
     <!-- NAVIGATION -->
+    <header role="banner">
+     <i class="fa fa-bars" id="iconmiddle"aria-hidden="true"><a class="toggle open" href="#"></a></i>
+   </header>
         <nav>
             <div class="logo">
               <p><span>Bali</span> Fitness</p>
             </div>
-            <ul class="list">
+            <ul class="list" id="navuns">
               <li><a href="#">Home</a></li>
               <li><a href="#">Classes</a></li>
               <li><a href="#">Trainers</a></li>
@@ -25,7 +30,7 @@
             </ul>
         </nav>
 <!-- ARTICLE MAIN-->
-        <article>
+        <article class="item1">
           <div class="banner">
               <h1>Fitness & Health</h1>
               <h3>is a Life Style</h3>
@@ -74,107 +79,114 @@
         </article>
  <!-- ARTICLE ITEM4 -->
 
-         <article class="item4">
-        <h1>CLASS SCHEDULE</h1>
-        <h3>Check our classes and select the best activity that fits you</h3>
-        <div class="wrapper-portrait">
-                <div class="clickable-container">
-                  <div class="single-news"><img src="img/trainer1.jpg">
-                   <div class="overlay">
-                     <div class="overlay-content"><h2>Rob Tylor</h2>
-                       <h3>CrossFit trainer</h3>
-                       <div class="portrait-info"><p>Rob is an expert in CrossFit,<br> he will get in you shape <br> in a blink of an eye</p></div>
-                       <div class="social-media">
-                         <i class="fa fa-twitter"></i>
-                         <i class="fa fa-facebook"></i>
-                         <i class="fa fa-instagram"></i>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                <div class="clickable-container">
-                  <div class="single-news"><img src="img/trainer6.jpg" >
-                   <div class="overlay">
-                     <div class="overlay-content"><h2>Sophia Marshall</h2>
-                       <h3>Yoga Trainer</h3>
-                       <div class="portrait-info"><p>With 10 years experience ,<br> Sophia is the master of <br> yoga and meditation</p></div>
-                       <div class="social-media">
-                         <i class="fa fa-twitter"></i>
-                         <i class="fa fa-facebook"></i>
-                         <i class="fa fa-instagram"></i>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                <div class="clickable-container">
-                  <div class="single-news"><img src="img/trainer2.jpg" >
-                   <div class="overlay">
-                     <div class="overlay-content"><h2>Sean Watson</h2>
-                       <h3>Boxing Trainer</h3>
-                       <div class="portrait-info"><p>Sean has worked with <br> some of the most famous<br> Boxers in the world</p></div>
-                       <div class="social-media">
-                         <i class="fa fa-twitter"></i>
-                         <i class="fa fa-facebook"></i>
-                         <i class="fa fa-instagram"></i>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                <div class="clickable-container">
-                  <div class="single-news"><img src="img/trainer5.jpg">
-                   <div class="overlay">
-                     <div class="overlay-content"><h2>Joanna Smith</h2>
-                       <h3>Fitness Trainer</h3>
-                       <div class="portrait-info"><p>Joanna is an amazing <br>fitness trainer and helped <br> many hollywood stars get <br>in shape </p></div>
-                       <div class="social-media">
-                         <i class="fa fa-twitter"></i>
-                         <i class="fa fa-facebook"></i>
-                         <i class="fa fa-instagram"></i>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                <div class="clickable-container">
-                  <div class="single-news"><img src="img/trainer3.jpg">
-                   <div class="overlay">
-                     <div class="overlay-content"><h2>Cody Forbs</h2>
-                       <h3>Body Building Trainer</h3>
-                       <div class="portrait-info"><p>Cody is an award winning,<br>Body building Trainer</p></div>
-                       <div class="social-media">
-                         <i class="fa fa-twitter"></i>
-                         <i class="fa fa-facebook"></i>
-                         <i class="fa fa-instagram"></i>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                <div class="clickable-container">
-                  <div class="single-news"><img src="img/trainer4.jpg" >
-                   <div class="overlay">
-                     <div class="overlay-content"><h2>Holly Mayers</h2>
-                       <h3>Jogging Trainer</h3>
-                       <div class="portrait-info"><p>Holly is the best when it,<br>comes to help clients  <br>losing weight</p></div>
-                       <div class="social-media">
-                         <i class="fa fa-twitter"></i>
-                         <i class="fa fa-facebook"></i>
-                         <i class="fa fa-instagram"></i>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-         </article>
+ <article class="trainers-section" id="trainers">
+         <div class="container">
+             <h2>Meet our Trainers</h2>
+             <p>We have some of the best and most experienced trainers in the world.</p>
+             <div class="trainers-ctn">
+                 <div class="trainer trainer1">
+                     <div class="overlay">
+                         <div class="trainer-details">
+                             <h3>Rob Taylor</h3>
+                             <span>CrossFit trainer</span>
+                             <p>Rob is an expert in CrossFit, he will get in you shape in a blink of an eye</p>
+                             <div class="social-trainer">
+                                 <i class="fa fa-twitter" aria-hidden="true"></i>
+                                 <i class="fa fa-facebook" aria-hidden="true"></i>
+                                 <i class="fa fa-instagram" aria-hidden="true"></i>
+                             </div>
+
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="trainer trainer2">
+                     <div class="overlay">
+                         <div class="trainer-details">
+                                 <h3>Sophia Marshall</h3>
+                                 <span>Yoga Trainer</span>
+                                 <p>With 10 years experience Sophia is the master of yoga and meditation</p>
+                                 <div class="social-trainer">
+                                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                                 </div>
+
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="trainer trainer3">
+                         <div class="overlay">
+                             <div class="trainer-details">
+                                 <h3>Sean Watson</h3>
+                                 <span>Boxing Trainer</span>
+                                 <p>Sean has worked with some of the most famous Boxers in the world</p>
+                                 <div class="social-trainer">
+                                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                                 </div>
+
+                             </div>
+                         </div>
+                 </div>
+
+                 <div class="trainer trainer4">
+                         <div class="overlay">
+                             <div class="trainer-details">
+                                 <h3>Joanna Smith</h3>
+                                 <span>Fitness Trainer</span>
+                                 <p>Joanna is an amazing fitness trainer and helped many hollywood stars get in shape</p>
+                                 <div class="social-trainer">
+                                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                                 </div>
+
+                             </div>
+                         </div>
+                 </div>
+
+                 <div class="trainer trainer5">
+                         <div class="overlay">
+                             <div class="trainer-details">
+                                 <h3>Cody Forbs</h3>
+                                 <span>Body Building Trainer</span>
+                                 <p>Cody is an award winning Body building Trainer </p>
+                                 <div class="social-trainer">
+                                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                                 </div>
+
+                             </div>
+                         </div>
+                 </div>
+
+                 <div class="trainer trainer6">
+                         <div class="overlay">
+                             <div class="trainer-details">
+                                 <h3>Holly Mayers</h3>
+                                 <span>Jogging Trainer</span>
+                                 <p>Holly is the best when it comes to help clients losing weight</p>
+                                 <div class="social-trainer">
+                                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                                 </div>
+                             </div>
+                         </div>
+                 </div>
+             </div>
+         </div>
+ </article>
 
   <!-- ARTICLE ITEM5 -->
           <article class="item5">
             <div class="banner-item5">
-                <h1>Fitness Classes</h1>
-                <h1> this summer</h1>
+                <h1>Fitness Classes <br>
+                   this summer</h1>
                 <p>Pay now and get 25% Discount</p>
                 <button><a href="#">BECOME A MEMEBER</a></button>
             </div>
@@ -193,7 +205,7 @@
                    <p>7 Aerobics</p>
                    <p>5 Massage</p>
                    <p>5 Body Building</p>
-                   <h5 class="active"><a href="#">SELECT PLAN</a></h5>
+                   <button><a href="#">SELECT PLAN</a></button>
                  </div>
                  <div class="price">
                    <p>BASIC</p>
@@ -204,7 +216,7 @@
                    <p>10 Aerobics</p>
                    <p>5 Massage</p>
                    <p>5 Body Building</p>
-                   <h5><a href="#">SELECT PLAN</a></h5>
+                  <button><a href="#">SELECT PLAN</a></button>
                  </div>
                  <div class="price">
                    <p>PRO</p>
@@ -215,25 +227,30 @@
                    <p>15 Swimming Classes</p>
                    <p>25 Massage</p>
                    <p>20 Body Building</p>
-                   <h5><a href="#">SELECT PLAN</a></h5>
+                   <button><a href="#">SELECT PLAN</a></button>
                  </div>
               </div>
-
             </article>
   <!-- FOOTER -->
             <footer>
                 <div class="social-media">
-                  <i class="fa fa-twitter"></i>
-                  <i class="fa fa-facebook"></i>
-                  <i class="fa fa-instagram"></i>
-                  <i class="fa fa-youtube"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
                 </div>
                 <p>
                   Copyright Bali Fitness. All Rights Reserved.<br>
-                  Made by Telmo Sampaio, self-interpretated by André Rothweiler
+                  Made by Telmo Sampaio, self-interpretated by André Rothweiler.
+                  <strong>Version 1.1</strong>
                 </p>
             </footer>
 
+
   </div>
+
+<a href="#" id="scrollup"><i class="fa fa-arrow-up"aria-hidden="true"> </a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
