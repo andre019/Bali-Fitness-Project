@@ -6,3 +6,5 @@ Really enjoyed the project!
 --------------------------------------
 Please visit the site!
 https://andrerothweiler.ch/projects/bali/index.html
+
+To get the best user experience, please use Chrome!
